@@ -1,8 +1,8 @@
 def multiple(number):
 
-    for i in range(1, number + 1):
+    for i in range(1, 10):
         print()
-        for u in range(1, 10):
+        for u in range(1, number + 1):
             print(i, "*", u, "=", i * u)
 
 multiple(6)
