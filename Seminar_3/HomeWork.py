@@ -28,7 +28,7 @@ def x_o():
             symbol = symbols[1]
 
         # Вводим цифру куда поставить символ
-        turn = int(input(f'введите цифру куда поставить vvedite cifry kuda postavit {symbol}\n'))
+        turn = int(input(f'введите цифру куда поставить {symbol}\n'))
 
         field[turn - 1] = symbol
 
