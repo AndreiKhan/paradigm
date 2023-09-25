@@ -5,7 +5,7 @@ def stopWatch():
     print('Введите цифру:')
     print('1 - запустить секундомер')
     print('2 - приостановить секундомер')
-    print('3 - заново запустить секундомер')
+    print('3 - снять с паузы секундомер')
     print('4 - остановить секундомер')
     print()
 
@@ -17,8 +17,8 @@ def stopWatch():
         command = input()
 
         if command == '1':
-            print('Секундомер запущен')
             startTime = time.time()
+            print('Секундомер запущен')
 
         elif command == '2':
             pause += (round(time.time() - startTime, 2))
@@ -26,7 +26,7 @@ def stopWatch():
 
         elif command == '3':
             startTime = time.time()
-            print(f'Секундомер запущен')
+            print(f'Секундомер снят с паузы')
 
         elif command == '4':
             print(f'Времени прошло {round((time.time() - startTime) + pause, 2)}')
