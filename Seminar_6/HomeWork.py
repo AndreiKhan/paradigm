@@ -1,5 +1,4 @@
 def binary(arr, number):
-    
     arr_start = 0
     arr_end = len(arr) - 1
     i = 0
@@ -14,7 +13,6 @@ def binary(arr, number):
         
         if search_number > number:
             arr_end = arr_center - 1
-        
         else:
             arr_start = arr_center + 1
 
