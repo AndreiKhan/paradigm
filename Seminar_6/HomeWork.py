@@ -1,7 +1,6 @@
 def binary(arr, number):
     arr_start = 0
     arr_end = len(arr) - 1
-    i = 0
     
     while arr_start <= arr_end:
         
@@ -15,8 +14,6 @@ def binary(arr, number):
             arr_end = arr_center - 1
         else:
             arr_start = arr_center + 1
-
-        i += 1
     
     return -1
 
